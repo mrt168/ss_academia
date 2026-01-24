@@ -1,0 +1,19 @@
+{
+  "name": "ss-academia",
+  "version": "1.0.0",
+  "description": "SS Academia with Figma Design",
+  "scripts": {
+    "sass": "sass src/scss:dist/css --style=compressed",
+    "sass:watch": "sass src/scss:dist/css --style=compressed --watch",
+    "js": "cp src/js/*.js dist/js/",
+    "js:watch": "nodemon --watch src/js -e js --exec 'npm run js'",
+    "build": "npm run sass && npm run js",
+    "watch": "npm-run-all --parallel sass:watch js:watch",
+    "dev": "npm run watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "npm-run-all": "^4.1.5",
+    "nodemon": "^3.1.0"
+  }
+}
