@@ -1093,7 +1093,7 @@ img {
     display: block;
     width: 420px;
     height: 18px;
-    background: url('../../img/title_bar.png') no-repeat center;
+    background: url('../images/title_bar.png') no-repeat center;
     background-size: contain;
     margin: 8px auto 0;
   }
@@ -1107,7 +1107,7 @@ img {
     &::after {
       width: 300px;
       height: 14px;
-      background-image: url('../../img/title_bar_sp.png');
+      background-image: url('../images/title_bar_sp.png');
     }
   }
 }
@@ -2455,7 +2455,7 @@ img {
   }
 
   &::before {
-    background: #F5F5F5 url('../../img/cta_bg_left.png') center/cover no-repeat;
+    background: #F5F5F5 url('../images/cta_bg_left.png') center/cover no-repeat;
   }
 
   &::after {
@@ -2479,7 +2479,7 @@ img {
   }
 
   &::before {
-    background: #F5F5F5 url('../../img/cta_bg_right.png') center/cover no-repeat;
+    background: #F5F5F5 url('../images/cta_bg_right.png') center/cover no-repeat;
   }
 
   &::after {
