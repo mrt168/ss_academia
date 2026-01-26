@@ -43,18 +43,80 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Smooth scroll for navigation links
+  // Smooth scroll for navigation links with header offset
+  const scrollToTarget = (targetId) => {
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.offsetHeight : 0;
+      // Extra offset for mobile (768px and below)
+      const isMobile = window.innerWidth <= 768;
+      const extraOffset = isMobile ? 40 : 0;
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraOffset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Desktop nav links
   const navLinks = document.querySelectorAll('.nav__link[href^="#"]');
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
       if (targetId && targetId !== '#') {
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          e.preventDefault();
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+        e.preventDefault();
+        scrollToTarget(targetId);
       }
+    });
+  });
+
+  // Mobile nav links
+  const mobileNavLinksScroll = document.querySelectorAll('.header__mobile-nav-link[href^="#"]');
+  mobileNavLinksScroll.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        e.preventDefault();
+        // Small delay to allow menu to close first
+        setTimeout(() => {
+          scrollToTarget(targetId);
+        }, 100);
+      }
+    });
+  });
+
+  // Auto-check form checkboxes based on CTA button clicked
+  const checkFormCheckbox = (value) => {
+    const checkbox = document.querySelector(`input[name="ご用件[]"][value="${value}"]`);
+    if (checkbox) {
+      checkbox.checked = true;
+    }
+  };
+
+  // Handle CTA buttons for 資料ダウンロード
+  const downloadButtons = document.querySelectorAll('.btn--primary[href="#contact"], .cta-card--download .btn');
+  downloadButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      scrollToTarget('#contact');
+      setTimeout(() => {
+        checkFormCheckbox('資料ダウンロード');
+      }, 500);
+    });
+  });
+
+  // Handle CTA buttons for 無料相談
+  const consultationButtons = document.querySelectorAll('.btn--secondary[href="#contact"], .cta-card--consultation .btn');
+  consultationButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      scrollToTarget('#contact');
+      setTimeout(() => {
+        checkFormCheckbox('無料相談');
+      }, 500);
     });
   });
 });
