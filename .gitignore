@@ -3,3 +3,9 @@ node_modules/
 *.log
 .sass-cache/
 .artifacts
+.claude/
+_docs/
+.playwright-mcp/
+screenshot/
+figma/
+*.skill
