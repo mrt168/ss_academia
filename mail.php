@@ -11,7 +11,7 @@ $site_top = "./";
 $to = "info@stock-sun.com";
 
 // 送信元メールアドレス
-$from = "StockSun Academia <info@stock-sun.com>";
+$from = "StockSun株式会社 <info@stock-sun.com>";
 
 // フォームのメールアドレス入力箇所のname属性の値
 $Email = "メールアドレス";
