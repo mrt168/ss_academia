@@ -724,6 +724,16 @@ img {
     font-size: 18px;
     line-height: 1.4;
   }
+
+  .label-amount {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+
+    @include sp {
+      font-size: 36px;
+    }
+  }
 }
 
 // Hero CTA
@@ -804,6 +814,21 @@ img {
 .video-section__content {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.video-section__certification {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-decoration: underline;
+  text-decoration-color: #003A8A;
+  text-underline-offset: 4px;
+
+  @include sp {
+    font-size: 20px;
+    margin-top: 24px;
+  }
 }
 
 .video-wrapper {
@@ -1978,6 +2003,266 @@ img {
 
 .roi-value {
   font-weight: 700;
+}
+
+// ===================
+// Pricing Section
+// ===================
+.pricing-section {
+  background: $white;
+  padding: 80px 0;
+
+  @include sp {
+    padding: 60px 0;
+  }
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+
+  @include sp {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.pricing-card {
+  background: #F8F8F8;
+  border: 2px solid $primary-blue;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+
+  @include sp {
+    padding: 24px 16px;
+  }
+}
+
+.pricing-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: $primary-blue;
+  margin-bottom: 16px;
+
+  @include sp {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+.pricing-card__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary-dark;
+  margin-bottom: 8px;
+
+  @include sp {
+    font-size: 16px;
+  }
+}
+
+.pricing-card__amount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: $accent-red;
+
+  @include sp {
+    font-size: 28px;
+  }
+}
+
+.pricing-card__detail {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+
+  @include sp {
+    font-size: 13px;
+  }
+}
+
+.pricing-total {
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 20px;
+
+  @include sp {
+    padding: 24px 20px;
+  }
+}
+
+.pricing-total__label {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary-dark;
+  margin-bottom: 8px;
+
+  @include sp {
+    font-size: 16px;
+  }
+}
+
+.pricing-total__price {
+  font-size: 20px;
+  font-weight: 700;
+  color: $primary-dark;
+
+  @include sp {
+    font-size: 18px;
+  }
+}
+
+.pricing-total__amount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+
+  @include sp {
+    font-size: 36px;
+  }
+}
+
+.pricing-note {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+
+  @include sp {
+    font-size: 12px;
+  }
+}
+
+// ===================
+// FAQ Section
+// ===================
+.faq-section {
+  background: $white;
+  padding: 80px 0;
+
+  @include sp {
+    padding: 60px 0;
+  }
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include sp {
+    gap: 20px;
+  }
+}
+
+.faq-item {
+  background: #F8F8F8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-item__question {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: #F0F4F8;
+  border-bottom: 1px solid #E0E0E0;
+
+  @include sp {
+    gap: 12px;
+    padding: 20px 16px;
+  }
+}
+
+.faq-item__q {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: $primary-blue;
+  color: $white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  @include sp {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+.faq-item__question-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: $primary-dark;
+  padding-top: 6px;
+
+  @include sp {
+    font-size: 16px;
+    padding-top: 4px;
+  }
+}
+
+.faq-item__answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+
+  @include sp {
+    gap: 12px;
+    padding: 20px 16px;
+  }
+}
+
+.faq-item__a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: $accent-red;
+  color: $white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  @include sp {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+.faq-item__answer-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: $primary-dark;
+  padding-top: 8px;
+
+  @include sp {
+    font-size: 14px;
+    padding-top: 6px;
+  }
 }
 
 // ===================

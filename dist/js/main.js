@@ -48,11 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       const header = document.querySelector('.header');
-      const headerHeight = header ? header.offsetHeight : 0;
-      // Extra offset for mobile (768px and below)
-      const isMobile = window.innerWidth <= 768;
-      const extraOffset = isMobile ? 40 : 0;
-      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraOffset;
+      const nav = document.querySelector('.nav');
+      const headerHeight = header ? header.offsetHeight : 80;
+      const navHeight = nav ? nav.offsetHeight : 60;
+      // Total offset: header + nav bar + 20px padding
+      const totalOffset = headerHeight + navHeight + 20;
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - totalOffset;
 
       window.scrollTo({
         top: targetPosition,

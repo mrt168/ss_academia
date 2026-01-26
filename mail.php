@@ -72,19 +72,16 @@ if ($empty_flag == 0) {
         $user_body = <<<MAIL
 {$name} 様
 
-StockSun Academiaにお問い合わせいただきありがとうございます。
+この度は資料ダウンロードいただきまして、誠にありがとうございます。
 
-資料ダウンロードのご請求をいただきましたので、
-下記URLよりダウンロードをお願いいたします。
-
-▼資料ダウンロードはこちら
+下記URLよりご査収ください。
 https://drive.google.com/file/d/1xGoEt4uRj-anX7_Ht-eDoZx8R0LkIj9n/view?usp=sharing
 
-ご不明点がございましたら、お気軽にお問い合わせください。
+引き続き何卒よろしくお願い申し上げます。
 
 ━━━━━━━━━━━━━━━━━━
-StockSun Academia サポート事務局
-https://stock-sun.com/
+StockSun株式会社
+お問い合わせ先：info@stock-sun.com
 ━━━━━━━━━━━━━━━━━━
 MAIL;
     } elseif ($has_consultation && !$has_download) {
@@ -159,12 +156,17 @@ MAIL;
     //  管理者宛メール送信
     //----------------------------------------------------------------------
 
-    $admin_subject = "【SS Academia】新規お問い合わせ";
-    $admin_body = <<<MAIL
-StockSun Academiaより新規お問い合わせがありました。
+    // LP URLの設定
+    $lp_url = ($lp_type === '広告用LP') ? 'https://stock-sun.com/ss_academia/index_ad.html' : 'https://stock-sun.com/ss_academia/';
+
+    if ($has_download && !$has_consultation) {
+        // 資料ダウンロードのみ
+        $admin_subject = "資料ダウンロードがありました（SNS運用でECモールの検索流入爆増メソッド）【StockSun】";
+        $admin_body = <<<MAIL
+資料ダウンロードがありました。
 
 -------------------------------
-LP種別：{$lp_type}
+LP URL：{$lp_url}
 会社名：{$company}
 お名前：{$name}
 メールアドレス：{$email}
@@ -173,10 +175,25 @@ LP種別：{$lp_type}
 ご質問・ご相談内容：
 {$message}
 -------------------------------
-
-送信日時：{$_SERVER['REQUEST_TIME']}
 MAIL;
-    $admin_body = str_replace('{$_SERVER[\'REQUEST_TIME\']}', date('Y/m/d H:i:s'), $admin_body);
+    } else {
+        // 無料相談のみ or 両方
+        $admin_subject = "【SS Academia】新規お問い合わせ";
+        $admin_body = <<<MAIL
+StockSun Academiaより新規お問い合わせがありました。
+
+-------------------------------
+LP URL：{$lp_url}
+会社名：{$company}
+お名前：{$name}
+メールアドレス：{$email}
+電話番号：{$tel}
+ご用件：{$purpose_str}
+ご質問・ご相談内容：
+{$message}
+-------------------------------
+MAIL;
+    }
 
     $admin_headers = "From: " . $from . "\r\n";
     $admin_headers .= "Reply-To: " . $email . "\r\n";
