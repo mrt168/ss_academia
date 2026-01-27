@@ -90,7 +90,7 @@ MAIL;
         $user_body = <<<MAIL
 {$name} 様
 
-StockSun Academiaにお問い合わせいただきありがとうございます。
+StockSun株式会社にお問い合わせいただきありがとうございます。
 
 無料相談のご希望をいただきましたので、
 担当者より2営業日以内にご連絡させていただきます。
@@ -107,8 +107,8 @@ StockSun Academiaにお問い合わせいただきありがとうございます
 ご不明点がございましたら、お気軽にお問い合わせください。
 
 ━━━━━━━━━━━━━━━━━━
-StockSun Academia サポート事務局
-https://stock-sun.com/
+StockSun株式会社
+お問い合わせ先：info@stock-sun.com
 ━━━━━━━━━━━━━━━━━━
 MAIL;
     } else {
@@ -117,11 +117,10 @@ MAIL;
         $user_body = <<<MAIL
 {$name} 様
 
-StockSun Academiaにお問い合わせいただきありがとうございます。
+StockSun株式会社にお問い合わせいただきありがとうございます。
 
-資料ダウンロードと無料相談のご希望をいただきました。
-
-▼資料ダウンロードはこちら
+資料ダウンロードと無料相談のご希望をいただきましたので
+下記URLより資料の方ご査収ください。
 https://drive.google.com/file/d/1xGoEt4uRj-anX7_Ht-eDoZx8R0LkIj9n/view?usp=sharing
 
 無料相談については、担当者より2営業日以内にご連絡させていただきます。
@@ -138,8 +137,8 @@ https://drive.google.com/file/d/1xGoEt4uRj-anX7_Ht-eDoZx8R0LkIj9n/view?usp=shari
 ご不明点がございましたら、お気軽にお問い合わせください。
 
 ━━━━━━━━━━━━━━━━━━
-StockSun Academia サポート事務局
-https://stock-sun.com/
+StockSun株式会社
+お問い合わせ先：info@stock-sun.com
 ━━━━━━━━━━━━━━━━━━
 MAIL;
     }
@@ -178,9 +177,9 @@ LP URL：{$lp_url}
 MAIL;
     } else {
         // 無料相談のみ or 両方
-        $admin_subject = "【SS Academia】新規お問い合わせ";
+        $admin_subject = "【マーケティングアカデミア】（SNS運用でECモールの検索流入爆増メソッド）新規お問い合わせ";
         $admin_body = <<<MAIL
-StockSun Academiaより新規お問い合わせがありました。
+マーケティングアカデミアより新規お問い合わせがありました。
 
 -------------------------------
 LP URL：{$lp_url}
