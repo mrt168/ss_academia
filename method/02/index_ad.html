@@ -93,13 +93,13 @@
             <div class="result-card">
               <h3 class="result-card__title">マーケティング支援</h3>
               <p class="result-card__content">
-                CTR★★％改善、CPA★★％改善
+                CTR<span class="label-amount">544</span>％改善、CPA<span class="label-amount">38</span>％改善
               </p>
             </div>
             <div class="result-card">
               <h3 class="result-card__title">FC加盟店募集</h3>
               <p class="result-card__content">
-                CTR★★％改善、CPA★★％改善
+                CVR<span class="label-amount">352</span>％改善、CTR<span class="label-amount">62</span>％改善
               </p>
             </div>
           </div>
@@ -477,21 +477,20 @@
           <div class="pricing-block__content">
             <div class="pricing-items">
               <div class="pricing-item">
-                <span class="pricing-item__label">広告運用手数料</span>
+                <span class="pricing-item__label">基本料金体系</span>
                 <div class="pricing-item__value">
                   <span class="pricing-item__amount">広告費+10</span>
                   <span class="pricing-item__unit">%</span>
                 </div>
-                <span class="pricing-item__detail">広告費に応じた手数料制</span>
               </div>
               <div class="pricing-item">
                 <span class="pricing-item__label">クリエイティブ制作費</span>
                 <div class="pricing-item__value">
-                  <span class="pricing-item__unit">別途見積</span>
+                  <span class="pricing-item__unit">別途お見積り</span>
                 </div>
-                <span class="pricing-item__detail">バナー・動画・LP制作など</span>
               </div>
             </div>
+            <p class="pricing-note" style="margin-top: 12px; font-size: 13px;">※クリエイティブ制作費はクオリティにより変動</p>
           </div>
         </div>
         <div class="pricing-total">
@@ -506,7 +505,7 @@
     </div>
   </section>
 
-  <!-- Requirements Section (improved UI per Task 5) -->
+  <!-- Requirements Section -->
   <section id="requirements" class="requirements-section">
     <div class="container">
       <h3 class="requirements-section__title">
@@ -514,15 +513,46 @@
         導入条件
         <img src="../../dist/images/attention.png" alt="" class="requirements-section__icon">
       </h3>
+
+      <!-- 必須条件 -->
+      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #003A8A;">必須条件</h4>
       <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
         <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">BtoB事業を<br>展開している</p>
+          <p class="requirement-card__text">BtoB商材、または<br>信頼性が重視される商材</p>
         </div>
         <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">月額広告費<br>50万円以上</p>
+          <p class="requirement-card__text">検討期間が比較的長い<br>商品・サービス</p>
         </div>
         <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">広告運用の<br>改善意欲がある</p>
+          <p class="requirement-card__text">月額広告費<br>50万円以上の予算確保</p>
+        </div>
+      </div>
+
+      <!-- 審査項目 -->
+      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #003A8A;">審査項目</h4>
+      <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="requirement-card" style="padding: 24px 20px;">
+          <p class="requirement-card__text">StockSunブランドとの<br>適合性</p>
+        </div>
+        <div class="requirement-card" style="padding: 24px 20px;">
+          <p class="requirement-card__text">StockSun競合サービスとの<br>重複確認</p>
+        </div>
+        <div class="requirement-card" style="padding: 24px 20px;">
+          <p class="requirement-card__text">商材の健全性</p>
+        </div>
+      </div>
+
+      <!-- お断りする可能性がある業種 -->
+      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #BC1F1F;">お断りする可能性がある業種</h4>
+      <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
+          <p class="requirement-card__text">アパレル・美容系<br>（若年層向け）</p>
+        </div>
+        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
+          <p class="requirement-card__text">StockSunと競合する<br>人材紹介業</p>
+        </div>
+        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
+          <p class="requirement-card__text">投資・金融系<br>（審査厳格化）</p>
         </div>
       </div>
     </div>
@@ -564,57 +594,27 @@
           </div>
           <div class="faq-item__answer">
             <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">可能です。導入条件の一部に適合していない場合でも、ご支援可能な場合がございますので、無料相談をお申し込みください。</p>
+            <p class="faq-item__answer-text">可能です。ただし、導入には審査がございます。まずはお気軽にご相談ください。</p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-item__question">
             <span class="faq-item__q">Q</span>
-            <p class="faq-item__question-text">広告運用を他社に依頼していますが、乗り換えは可能ですか？</p>
+            <p class="faq-item__question-text">最低広告予算の目安を教えてください。</p>
           </div>
           <div class="faq-item__answer">
             <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">可能です。現在の運用状況を分析し、スムーズな移行プランをご提案いたします。</p>
+            <p class="faq-item__answer-text">月額50万円以上を推奨しております。株本クリエイティブ制作コストやデータアセット活用の効果を最大化するには、一定のボリュームが必要となるためです。50万円以下の場合は、事前審査で個別に判断させていただきます。</p>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-item__question">
             <span class="faq-item__q">Q</span>
-            <p class="faq-item__question-text">最低契約期間はありますか？</p>
+            <p class="faq-item__question-text">どのくらいの期間で効果が出ますか？</p>
           </div>
           <div class="faq-item__answer">
             <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">最低3ヶ月の契約期間を推奨しておりますが、詳細は無料相談にてご説明いたします。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <span class="faq-item__q">Q</span>
-            <p class="faq-item__question-text">どのような広告媒体に対応していますか？</p>
-          </div>
-          <div class="faq-item__answer">
-            <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">Google広告、Meta広告（Facebook/Instagram）、LinkedIn広告など、BtoB領域で効果的な主要媒体に対応しております。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <span class="faq-item__q">Q</span>
-            <p class="faq-item__question-text">クリエイティブ制作だけの依頼は可能ですか？</p>
-          </div>
-          <div class="faq-item__answer">
-            <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">広告運用と合わせてのご支援を基本としておりますが、ご状況に応じて柔軟に対応いたします。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-item__question">
-            <span class="faq-item__q">Q</span>
-            <p class="faq-item__question-text">成果が出るまでどのくらいかかりますか？</p>
-          </div>
-          <div class="faq-item__answer">
-            <span class="faq-item__a">A</span>
-            <p class="faq-item__answer-text">商材や市場環境によりますが、通常1〜2ヶ月で初期的な改善効果が見え始め、3ヶ月で本格的なCPA改善を実感いただけるケースが多いです。</p>
+            <p class="faq-item__answer-text">初月から効果を実感いただけるケースが多いです。ただし、クリエイティブの摩耗を防ぐため、中長期的に出稿停止期間の設定や、新フォーマットのクリエイティブ制作など、最適化が必要となります。</p>
           </div>
         </div>
       </div>
