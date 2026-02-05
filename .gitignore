@@ -3,6 +3,7 @@ node_modules/
 *.log
 .sass-cache/
 .artifacts
+.worktree
 .claude/
 _docs/
 .playwright-mcp/
