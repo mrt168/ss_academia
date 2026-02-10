@@ -56,6 +56,7 @@
         <ul class="header__mobile-nav-list">
           <li><a href="#problems" class="header__mobile-nav-link">解決できる課題</a></li>
           <li><a href="#why" class="header__mobile-nav-link">他社との違い</a></li>
+          <li><a href="#process" class="header__mobile-nav-link">メカニズム</a></li>
           <li><a href="#pricing" class="header__mobile-nav-link">料金プラン</a></li>
           <li><a href="#faq" class="header__mobile-nav-link">よくあるご質問</a></li>
         </ul>
@@ -138,7 +139,13 @@
         </li>
         <li class="nav__item">
           <a href="#why" class="nav__link">
-            他社との違い
+            なぜ再現性が高いのか
+            <span class="nav__icon"></span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#process" class="nav__link">
+            メカニズム
             <span class="nav__icon"></span>
           </a>
         </li>
@@ -195,10 +202,10 @@
       <p class="solution-section__intro">をご紹介します。</p>
       <p class="solution-section__badge">弊社のメソッドはここが違う！！</p>
 
-      <!-- Method Image -->
-      <picture class="method-image" style="display: block; margin-top: 40px;">
+      <!-- メソッドの違い画像 -->
+      <picture class="method-image">
         <source media="(max-width: 768px)" srcset="../../dist/images/method_uchino_sp.png">
-        <img src="../../dist/images/method_uchino.png" alt="マーケティングアカデミアのメソッド 01 時流とデータの両方を兼ね備えた合理的なアプローチ 02 複数事例で実証済みのメソッドを提供 03 第三者マーケターによる厳しい審査済 04 効果を出せない条件も事前に明示する透明性" style="width: 100%; height: auto;">
+        <img src="../../dist/images/method_uchino.png" alt="マーケティングアカデミアのメソッド - 01: 時流とデータの両方を兼ね備えた合理的なアプローチ、02: 数事例で実証済みのメソッドを提供、03: 第三者マーケターによる厳しい審査済、04: 効果を出せない条件も事前に明示する透明性">
       </picture>
     </div>
   </section>
@@ -257,59 +264,7 @@
     </div>
   </section>
 
-  <!-- Steps Section (separate section per Task 5) -->
-  <section class="steps-section">
-    <div class="container">
-      <h2 class="section-title">広告効果が上がる簡単3ステップ</h2>
-      <div class="steps-cards">
-        <div class="step-card step-card--1">
-          <div class="step-card__accent"></div>
-          <div class="step-card__inner">
-            <div class="step-card__image">
-              <img src="../../dist/images/AdobeStock_318902445_1_5-812.png" alt="商材相性診断" class="step-card__img">
-            </div>
-            <div class="step-card__content">
-              <span class="step-card__number">STEP 01</span>
-              <h4 class="step-card__title">商材相性診断・<br>広告配信設計</h4>
-              <p class="step-card__text">貴社の商材・ターゲットを分析し、<br class="sp-br">最適な広告チャネルと<br>配信戦略を設計します。</p>
-            </div>
-          </div>
-        </div>
-        <div class="step-card step-card--2">
-          <div class="step-card__accent"></div>
-          <div class="step-card__inner">
-            <div class="step-card__image">
-              <img src="../../dist/images/AdobeStock_318902445_1_5-816.png" alt="クリエイティブ制作" class="step-card__img">
-            </div>
-            <div class="step-card__content">
-              <span class="step-card__number">STEP 02</span>
-              <h4 class="step-card__title">クリエイティブ制作</h4>
-              <p class="step-card__text">過去のデータに基づいた<br class="sp-br">成果が出るクリエイティブを制作。<br>A/Bテストも実施します。</p>
-              <img src="../../dist/images/down_blue.png" alt="" class="steps-arrow">
-              <p class="step-card__note">CTR・CVR改善の起爆剤</p>
-            </div>
-          </div>
-        </div>
-        <div class="step-card step-card--3">
-          <div class="step-card__accent"></div>
-          <div class="step-card__inner">
-            <div class="step-card__image">
-              <img src="../../dist/images/AdobeStock_318902445_1_5-819.png" alt="広告配信" class="step-card__img">
-            </div>
-            <div class="step-card__content">
-              <span class="step-card__number">STEP 03</span>
-              <h4 class="step-card__title">広告配信</h4>
-              <p class="step-card__text">独自データを活用した<br class="sp-br">ターゲティングと入札最適化で<br>CPAを最小化します。</p>
-              <img src="../../dist/images/down_blue.png" alt="" class="steps-arrow">
-              <p class="step-card__note">CPA大幅改善を実現</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Results Section (separate section per Task 5) -->
+  <!-- Results Section -->
   <section class="impact-section">
     <div class="container">
       <h2 class="section-title">支援実績</h2>
@@ -329,16 +284,16 @@
           </thead>
           <tbody>
             <tr>
-              <td class="result-table__label">株本未使用</td>
+              <td class="result-table__label">メソッド未使用</td>
               <td>¥17,449</td>
               <td>0.05%</td>
               <td>4.81%</td>
             </tr>
             <tr class="result-table__highlight">
-              <td class="result-table__label">株本使用</td>
-              <td>¥10,738</td>
-              <td>0.28%</td>
-              <td>4.96%</td>
+              <td class="result-table__label result-table__label--highlight">メソッド使用</td>
+              <td class="result-table__value--highlight">¥10,738</td>
+              <td class="result-table__value--highlight">0.28%</td>
+              <td class="result-table__value--highlight">4.96%</td>
             </tr>
           </tbody>
         </table>
@@ -360,16 +315,16 @@
           </thead>
           <tbody>
             <tr>
-              <td class="result-table__label">株本未使用</td>
+              <td class="result-table__label">メソッド未使用</td>
               <td>¥16,991</td>
               <td>1.39%</td>
               <td>3.06%</td>
             </tr>
             <tr class="result-table__highlight">
-              <td class="result-table__label">株本使用</td>
-              <td>¥13,001</td>
-              <td>1.83%</td>
-              <td>3.50%</td>
+              <td class="result-table__label result-table__label--highlight">メソッド使用</td>
+              <td class="result-table__value--highlight">¥13,001</td>
+              <td class="result-table__value--highlight">1.83%</td>
+              <td class="result-table__value--highlight">3.50%</td>
             </tr>
           </tbody>
         </table>
@@ -398,10 +353,10 @@
               <td>0.05%</td>
             </tr>
             <tr class="result-table__highlight">
-              <td class="result-table__label">株本使用</td>
-              <td>¥27,592</td>
-              <td>2.00%</td>
-              <td>1.80%</td>
+              <td class="result-table__label result-table__label--highlight">メソッド使用</td>
+              <td class="result-table__value--highlight">¥27,592</td>
+              <td class="result-table__value--highlight">2.00%</td>
+              <td class="result-table__value--highlight">1.80%</td>
             </tr>
           </tbody>
         </table>
@@ -424,10 +379,10 @@
               <td>0.15%</td>
             </tr>
             <tr class="result-table__highlight">
-              <td class="result-table__label">株本使用</td>
-              <td>¥19,342</td>
-              <td>0.76%</td>
-              <td>0.48%</td>
+              <td class="result-table__label result-table__label--highlight">メソッド使用</td>
+              <td class="result-table__value--highlight">¥19,342</td>
+              <td class="result-table__value--highlight">0.76%</td>
+              <td class="result-table__value--highlight">0.48%</td>
             </tr>
           </tbody>
         </table>
@@ -450,18 +405,22 @@
               <div class="pricing-item">
                 <span class="pricing-item__label">基本料金体系</span>
                 <div class="pricing-item__value">
-                  <span class="pricing-item__amount">広告費+10</span>
+                  <span class="pricing-item__amount">広告配信手数料に+10</span>
                   <span class="pricing-item__unit">%</span>
                 </div>
-              </div>
-              <div class="pricing-item">
-                <span class="pricing-item__label">クリエイティブ制作費</span>
-                <div class="pricing-item__value">
-                  <span class="pricing-item__unit">別途お見積り</span>
-                </div>
+                <p class="pricing-item__desc">「StockSunアセット」を使用可能</p>
               </div>
             </div>
-            <p class="pricing-note" style="margin-top: 12px; font-size: 13px;">※クリエイティブ制作費はクオリティにより変動</p>
+            <div class="pricing-asset">
+              <p class="pricing-asset__title">StockSunアセット詳細:</p>
+              <ul class="pricing-asset__list">
+                <li>株本氏クリエティブ</li>
+                <li>StockSun運営チャンネルデータの広告利用</li>
+                <li>StockSun運営サイトへのリターゲティング</li>
+              </ul>
+            </div>
+            <p class="pricing-note" style="margin-top: 12px; font-size: 13px;">※実施にはクライアントごとのチェックが必須となり、実施商品の審査が入ります。</p>
+            <p class="pricing-note" style="font-size: 13px;">※クリエティブ制作費用は別途発生致します。価格はクオリティによって変動。</p>
           </div>
         </div>
         <div class="pricing-total">
@@ -472,59 +431,6 @@
           </div>
         </div>
         <p class="pricing-note">※月額広告費50万円以上を推奨しております</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Requirements Section -->
-  <section id="requirements" class="requirements-section">
-    <div class="container">
-      <h3 class="requirements-section__title">
-        <img src="../../dist/images/attention.png" alt="" class="requirements-section__icon">
-        導入条件
-        <img src="../../dist/images/attention.png" alt="" class="requirements-section__icon">
-      </h3>
-
-      <!-- 必須条件 -->
-      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #003A8A;">必須条件</h4>
-      <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">BtoB商材、または<br>信頼性が重視される商材</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">検討期間が比較的長い<br>商品・サービス</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">月額広告費<br>50万円以上の予算確保</p>
-        </div>
-      </div>
-
-      <!-- 審査項目 -->
-      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #003A8A;">審査項目</h4>
-      <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">StockSunブランドとの<br>適合性</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">StockSun競合サービスとの<br>重複確認</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px;">
-          <p class="requirement-card__text">商材の健全性</p>
-        </div>
-      </div>
-
-      <!-- お断りする可能性がある業種 -->
-      <h4 style="font-size: 18px; font-weight: 700; margin: 24px 0 16px; color: #BC1F1F;">お断りする可能性がある業種</h4>
-      <div class="requirements-cards" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
-          <p class="requirement-card__text">アパレル・美容系<br>（若年層向け）</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
-          <p class="requirement-card__text">StockSunと競合する<br>人材紹介業</p>
-        </div>
-        <div class="requirement-card" style="padding: 24px 20px; border-color: #BC1F1F;">
-          <p class="requirement-card__text">投資・金融系<br>（審査厳格化）</p>
-        </div>
       </div>
     </div>
   </section>
@@ -599,7 +505,7 @@
       <p class="contact-section__subtitle">資料ダウンロード・無料相談のお申し込みはこちらから</p>
 
       <form class="contact-form" action="../../mail.php" method="POST">
-        <input type="hidden" name="LP種別" value="内野メソッド広告用LP">
+        <input type="hidden" name="LP種別" value="内野メソッドLP（広告用）">
         <div class="contact-form__row">
           <label class="contact-form__label">
             会社名 <span class="required">*</span>
