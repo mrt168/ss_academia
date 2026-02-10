@@ -724,16 +724,16 @@ img {
     font-size: 18px;
     line-height: 1.4;
   }
+}
 
-  .label-amount {
-    font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    color: #DE0000;
+.label-amount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #DE0000;
 
-    @include sp {
-      font-size: 36px;
-    }
+  @include sp {
+    font-size: 36px;
   }
 }
 
